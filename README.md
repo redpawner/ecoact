@@ -19,26 +19,32 @@ Follow these steps to set up and run the FastAPI application:
 
 1. Clone the repository:
 
-   ```bash
-   git clone https://github.com/yourusername/ecoact.git
-   cd ecoact
-   ```
-
-````
+```bash
+git clone https://github.com/yourusername/ecoact.git
+cd ecoact
+```
 
 2. Run the setup script
 
 ```bash
 ./setup.sh
-````
+```
+
+If you're setup.sh script is not running you may need to run:
+```bash
+chmod +x setup.sh
+```
 
 ## Configuration
 
 The application supports the following configuration options via environment variables:
-
+```
 DATABASE_URL: The URL of the PostgreSQL database. Default is postgresql://admin:welovetheenvironment@db:5432/ecoact_db.
+
 FASTAPI_HOST: The host on which FastAPI listens. Default is 0.0.0.0.
+
 FASTAPI_PORT: The port on which FastAPI runs. Default is 8000.
+```
 
 ## Usage
 
@@ -72,7 +78,12 @@ Navigate to http://localhost:8000/docs to see the full API documentation
 
 ## UI
 
-A rudimentary UI set up with Dash can be accessed by navigating to: http://localhost:8050
+A rudimentary UI set up with Dash can be set up and accessed by opening a new terminal and typing these commands (assuming you are in the root folder):
+```
+cd dash
+python app.py
+```
+You can then navigate to: http://localhost:8050
 
 ### Next steps
 
