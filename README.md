@@ -20,7 +20,7 @@ Follow these steps to set up and run the FastAPI application:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/ecoact.git
+git clone https://github.com/redpawner/ecoact.git
 cd ecoact
 ```
 
